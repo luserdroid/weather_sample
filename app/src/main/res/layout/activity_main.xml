@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark">
+
+    <LinearLayout xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimaryDark"
+        android:orientation="vertical"
+        android:padding="10dp"
+        tools:context="com.crvsh.weatherapp.MainActivity">
+
+        <TextView
+            android:id="@+id/zip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:padding="10dp"
+            android:text="Einfach den Städtenamen eingeben."
+            android:textColor="@android:color/white"
+            android:textSize="24dp" />
+
+        <EditText
+            android:id="@+id/city_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:alpha="0.7"
+            android:background="@color/colorAccent"
+            android:cursorVisible="true"
+            android:hint="z.B. Bonn"
+            android:padding="10dp"
+            android:textColor="@android:color/white"
+            android:textColorHint="@android:color/white" />
+
+        <Button
+            android:id="@+id/start_search"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:layout_marginBottom="10dp"
+            android:padding="10dp"
+            android:text="Wie ist das Wetter heute ?" />
+
+        <TextView
+            android:id="@+id/weather_data"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:textSize="24dp"/>
+
+
+    </LinearLayout>
+</ScrollView>
