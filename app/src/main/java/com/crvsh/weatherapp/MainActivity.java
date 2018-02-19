@@ -57,7 +57,7 @@ public class MainActivity extends AppCompatActivity {
         params.put("lang", "de");
         params.put("cnt", "1");
         params.put("units", "metric");
-        params.put("appid", "12e39368b355566defe13e75d397890c");
+        params.put("appid", "add api");
 
         WeatherApiService service = api.getWeatherService();
         service.getCityWeather(params).enqueue(new retrofit2.Callback<WeatherData>() {
