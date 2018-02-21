@@ -50,6 +50,8 @@ public class MainActivity extends AppCompatActivity {
             return;
         }
 
+        String appId = "12e39368b355566defe13e75d397890c";
+
         WeatherRestApi api = new WeatherRestApi();
 
         Map<String, String> params = new HashMap<>();
@@ -57,7 +59,7 @@ public class MainActivity extends AppCompatActivity {
         params.put("lang", "de");
         params.put("cnt", "1");
         params.put("units", "metric");
-        params.put("appid", "add api");
+        params.put("appid", appId);
 
         WeatherApiService service = api.getWeatherService();
         service.getCityWeather(params).enqueue(new retrofit2.Callback<WeatherData>() {
